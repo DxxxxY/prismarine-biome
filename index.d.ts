@@ -1,4 +1,4 @@
-import Registry from 'prismarine-registry'
+import { Registry } from '@dxxxxy/prismarine-registry'
 
 declare class Biome {
   id: number
@@ -19,4 +19,4 @@ declare class Biome {
 
 /** @deprecated */
 export default function loader(mcVersion: string): typeof Biome
-export default function loader(registry: ReturnType<typeof Registry>): typeof Biome
+export default function loader(registry: Registry): typeof Biome
